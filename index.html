@@ -38,7 +38,7 @@
                 <span>Swiggy Corporate</span>
             </div>
 
-            <div class="nav-item">
+            <div class="nav-item" id="searchBtn">
                 <i class='bx bx-search'></i>
                 <span>Search</span>
             </div>
@@ -564,6 +564,26 @@
 
 </section>
 
+<div class="search-modal" id="searchModal">
+
+    <div class="search-box">
+
+        <div class="search-header">
+
+            <input
+                type="text"
+                placeholder="Search for restaurant and food"
+                id="searchInput"
+            >
+
+            <i class='bx bx-x close-search' id="closeSearch"></i>
+
+        </div>
+
+    </div>
+
+</div>
+
 <script>
 const slider = document.getElementById("foodSlider");
 
@@ -632,10 +652,46 @@ addButtons.forEach(button => {
         localStorage.setItem("cartCount", cartCount);
     });
 });
+
+const searchBtn =
+document.getElementById("searchBtn");
+
+const searchModal =
+document.getElementById("searchModal");
+
+const closeSearch =
+document.getElementById("closeSearch");
+
+const searchInput =
+document.getElementById("searchInput");
+
+searchBtn.addEventListener("click", () => {
+
+    searchModal.classList.add("active");
+
+    searchInput.focus();
+
+});
+
+closeSearch.addEventListener("click", () => {
+
+    searchModal.classList.remove("active");
+
+});
+
+window.addEventListener("click", (e) => {
+
+    if(e.target === searchModal){
+
+        searchModal.classList.remove("active");
+
+    }
+
+});
 </script>
 
 
 </body>
 
-</body>
+
 </html>
