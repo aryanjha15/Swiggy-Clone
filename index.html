@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="left-section">
+
+            <div class="logo">
+                <img src="images/swiggy-logo.png" alt="Swiggy Logo">
+            </div>
+
+            <div class="location">
+                <span class="home">HOME</span>
+
+                <span class="address">
+                    Deoli, Devli, Sangam Vihar, New Del...
+                </span>
+
+                <i class='bx bx-chevron-down'></i>
+            </div>
+
+        </div>
+
+        <div class="right-section">
+
+            <div class="nav-item">
+                <i class='bx bx-briefcase-alt-2'></i>
+                <span>Swiggy Corporate</span>
+            </div>
+
+            <div class="nav-item">
+                <i class='bx bx-search'></i>
+                <span>Search</span>
+            </div>
+
+            <div class="nav-item offers">
+
+                <i class='bx bx-purchase-tag-alt'></i>
+
+                <span>Offers</span>
+
+                <sup>NEW</sup>
+
+            </div>
+
+            <div class="nav-item">
+                <i class='bx bx-help-circle'></i>
+                <span>Help</span>
+            </div>
+
+            <div class="nav-item">
+                <i class='bx bx-user'></i>
+                <span>Anshu Jha</span>
+            </div>
+
+           <div class="nav-item cart-item">
+
+    <i class='bx bx-cart'></i>
+
+    <span>Cart</span>
+
+    <span id="cartCount" class="cart-count">0</span>
+
+</div>
+
+        </div>
+
+    </nav>
+
+    <section class="mind-section">
+
+    <div class="mind-header">
+
+        <h2>what's on your mind?</h2>
+
+        <div class="slider-buttons">
+            <button id="prevBtn">
+                <i class='bx bx-left-arrow-alt'></i>
+            </button>
+
+            <button id="nextBtn">
+                <i class='bx bx-right-arrow-alt'></i>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="food-slider" id="foodSlider">
+
+        <div class="food-item">
+            <img src="images/cholebhature.png">
+           
+        </div>
+
+        <div class="food-item">
+            <img src="images/cake.png">
+            
+        </div>
+
+        <div class="food-item">
+            <img src="images/dosa.png">
+            
+        </div>
+
+        <div class="food-item">
+            <img src="images/paratha.png">
+           
+        </div>
+
+        <div class="food-item">
+            <img src="images/sandwich.png">
+            
+        </div>
+
+        <div class="food-item">
+            <img src="images/biryani.png">
+            
+        </div>
+
+        <div class="food-item">
+            <img src="images/kachori.png">
+           
+        </div>
+
+        <div class="food-item">
+            <img src="images/samosa.png">
+        </div>
+
+        <div class="food-item">
+            <img src="images/samosa.png">
+        </div>
+
+        <div class="food-item">
+            <img src="images/samosa.png">
+        </div>
+
+        <div class="food-item">
+            <img src="images/samosa.png">
+        </div>
+
+        <div class="food-item">
+            <img src="images/samosa.png">
+        </div>
+
+         
+
+    </div>
+
+</section>
+
+<section class="restaurant-section">
+
+    <div class="restaurant-header">
+
+        <h2>Top restaurant chains in Delhi</h2>
+
+        <div class="restaurant-buttons">
+            <button id="restaurantPrev">
+                <i class='bx bx-left-arrow-alt'></i>
+            </button>
+
+            <button id="restaurantNext">
+                <i class='bx bx-right-arrow-alt'></i>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="restaurant-slider" id="restaurantSlider">
+
+        <!-- CARD 1 -->
+        <div class="restaurant-card">
+
+            <div class="card-image">
+                <img src="images/pizzahut.jpg">
+
+                <div class="offer-banner">
+                    60% OFF UPTO ₹110
+                </div>
+
+                <div class="free-delivery">
+                    one Free delivery
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h3>Pizza Hut</h3>
+
+                <p class="rating">
+                    ⭐ 4.3 • 30-40 mins
+                </p>
+
+                <p class="cuisine">
+                    Pizzas
+                </p>
+
+                <p class="location">
+                    Kalkaji
+                </p>
+
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="restaurant-card">
+
+            <div class="card-image">
+                <img src="images/chaayos.jpg">
+
+                <div class="offer-banner">
+                    50% OFF
+                </div>
+
+                <div class="free-delivery">
+                    one Free delivery
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h3>Chaayos Chai+Snacks=Relax</h3>
+
+                <p class="rating">
+                    ⭐ 4.6 • 25-30 mins
+                </p>
+
+                <p class="cuisine">
+                    Beverages, Chaat, Snacks
+                </p>
+
+                <p class="location">
+                    Govindpuri
+                </p>
+                
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="restaurant-card">
+
+            <div class="card-image">
+                <img src="images/bakingo.jpg">
+
+                <div class="offer-banner">
+                    60% OFF UPTO ₹120
+                </div>
+
+                <div class="free-delivery">
+                    one Free delivery
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h3>Bakingo</h3>
+
+                <p class="rating">
+                    ⭐ 4.6 • 25-30 mins
+                </p>
+
+                <p class="cuisine">
+                    Bakery, Desserts
+                </p>
+
+                <p class="location">
+                    Kalkaji
+                </p>
+
+                <button class="add-cart-btn">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="restaurant-card">
+
+            <div class="card-image">
+                <img src="images/starbucks.jpg">
+
+                <div class="offer-banner">
+                    ₹75 OFF ABOVE ₹169
+                </div>
+
+                <div class="free-delivery">
+                    one Free delivery
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h3>Starbucks Coffee</h3>
+
+                <p class="rating">
+                    ⭐ 4.6 • 25-30 mins
+                </p>
+
+                <p class="cuisine">
+                    Beverages, Cafe
+                </p>
+
+                <p class="location">
+                    Nehru Place
+                </p>
+                <button class="add-cart-btn">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="food-slider" id="foodSlider">
+   ...
+</div>
+
+<!--<div class="restaurant-header">
+
+        <h2>Top restaurant chains in Delhi</h2>
+
+        <div class="restaurant-buttons">
+            <button id="restaurantPrev">
+                <i class='bx bx-left-arrow-alt'></i>
+            </button>
+
+            <button id="restaurantNext">
+                <i class='bx bx-right-arrow-alt'></i>
+            </button>
+        </div>
+
+    </div>
+-->
+
+<section class="delivery-section">
+
+    <h2>Restaurants with online food delivery in Delhi</h2>
+
+    <!-- FILTERS -->
+
+    <div class="filters">
+
+        <div class="sort-wrapper">
+
+            <button id="sortBtn" class="filter-btn">
+                Sort By
+                <i class='bx bx-chevron-down'></i>
+            </button>
+
+            <div id="sortDropdown" class="sort-dropdown">
+
+                <label>
+                    <input type="radio" name="sort" checked>
+                    Relevance (Default)
+                </label>
+
+                <label>
+                    <input type="radio" name="sort">
+                    Delivery Time
+                </label>
+
+                <label>
+                    <input type="radio" name="sort">
+                    Rating
+                </label>
+
+                <label>
+                    <input type="radio" name="sort">
+                    Cost: Low to High
+                </label>
+
+                <label>
+                    <input type="radio" name="sort">
+                    Cost: High to Low
+                </label>
+
+                <button class="apply-btn">
+                    Apply
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="restaurant-grid">
+
+        <!-- Card 1 -->
+        <div class="restaurant-card">
+            <div class="card-image">
+                <img src="images/wendys.jpg">
+                <div class="free-delivery">one Free delivery</div>
+                <div class="offer-banner">60% OFF UPTO ₹120</div>
+            </div>
+
+            <div class="card-content">
+                <h3>Wendy's Burgers</h3>
+                <p class="rating">⭐ 4.1 • 25-30 mins</p>
+                <p class="cuisine">Burgers, Fast Food, Wrap</p>
+                <p class="location">Kalkaji</p>
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="restaurant-card">
+            <div class="card-image">
+                <img src="images/pizzahut.jpg">
+                <div class="free-delivery">one Free delivery</div>
+                <div class="offer-banner">60% OFF UPTO ₹110</div>
+            </div>
+
+            <div class="card-content">
+                <h3>Pizza Hut</h3>
+                <p class="rating">⭐ 4.3 • 35-40 mins</p>
+                <p class="cuisine">Pizzas</p>
+                <p class="location">Saket</p>
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="restaurant-card">
+            <div class="card-image">
+                <img src="images/chaayos.jpg">
+                <div class="free-delivery">one Free delivery</div>
+                <div class="offer-banner">50% OFF</div>
+            </div>
+
+            <div class="card-content">
+                <h3>Chaayos Chai+Snacks=Relax</h3>
+                <p class="rating">⭐ 4.6 • 25-30 mins</p>
+                <p class="cuisine">Beverages, Chaat, Bakery...</p>
+                <p class="location">Saket</p>
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="restaurant-card">
+            <div class="card-image">
+                <img src="images/starbucks.jpg">
+                <div class="free-delivery">one Free delivery</div>
+                <div class="offer-banner">₹75 OFF ABOVE ₹169</div>
+            </div>
+
+            <div class="card-content">
+                <h3>Starbucks Coffee</h3>
+                <p class="rating">⭐ 4.4 • 35-40 mins</p>
+                <p class="cuisine">Beverages, Cafe, Desserts</p>
+                <p class="location">Saket</p>
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="restaurant-card">
+            <div class="card-image">
+                <img src="images/bakingo.jpg">
+                <div class="free-delivery">one Free delivery</div>
+                <div class="offer-banner">60% OFF UPTO ₹120</div>
+            </div>
+
+            <div class="card-content">
+                <h3>Bakingo</h3>
+                <p class="rating">⭐ 4.6 • 25-30 mins</p>
+                <p class="cuisine">Bakery, Desserts</p>
+                <p class="location">Saidulajab</p>
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="restaurant-card">
+            <div class="card-image">
+                <img src="images/theobroma.jpg">
+                <div class="free-delivery">one Free delivery</div>
+                <div class="offer-banner">ITEMS AT ₹35</div>
+                
+            </div>
+
+            <div class="card-content">
+                <h3>Theobroma</h3>
+                <p class="rating">⭐ 4.6 • 25-30 mins</p>
+                <p class="cuisine">Bakery, Desserts</p>
+                <p class="location">Malviya Nagar</p>
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="restaurant-card">
+            <div class="card-image">
+                <img src="images/mcd.jpg">
+                <div class="free-delivery">one Free delivery</div>
+                <div class="offer-banner">ITEMS AT ₹49</div>
+            </div>
+
+            <div class="card-content">
+                <h3>McDonald's</h3>
+                <p class="rating">⭐ 4.5 • 25-30 mins</p>
+                <p class="cuisine">American, Fast Food</p>
+                <p class="location">Saket</p>
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="restaurant-card">
+            <div class="card-image">
+                <img src="images/subway.jpg">
+                <div class="free-delivery">one Free delivery</div>
+                <div class="offer-banner">₹150 OFF ABOVE ₹299</div>
+            </div>
+
+            <div class="card-content">
+                <h3>Subway</h3>
+                <p class="rating">⭐ 4.4 • 25-30 mins</p>
+                <p class="cuisine">Sandwich, Healthy Food</p>
+                <p class="location">PVR Saket</p>
+                <button class="add-cart-btn">
+        Add to Cart
+    </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+const slider = document.getElementById("foodSlider");
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+    slider.scrollBy({
+        left: 500,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+    slider.scrollBy({
+        left: -500,
+        behavior: "smooth"
+    });
+});
+
+const restaurantSlider =
+document.getElementById("restaurantSlider");
+
+document.getElementById("restaurantNext")
+.addEventListener("click", () => {
+
+    restaurantSlider.scrollBy({
+        left: 600,
+        behavior: "smooth"
+    });
+
+});
+
+document.getElementById("restaurantPrev")
+.addEventListener("click", () => {
+
+    restaurantSlider.scrollBy({
+        left: -600,
+        behavior: "smooth"
+    });
+
+});
+
+const sortBtn = document.getElementById("sortBtn");
+const sortDropdown = document.getElementById("sortDropdown");
+
+sortBtn.addEventListener("click", () => {
+    sortDropdown.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+    if (!sortBtn.contains(e.target) &&
+        !sortDropdown.contains(e.target)) {
+        sortDropdown.classList.remove("active");
+    }
+});
+
+let cartCount = parseInt(localStorage.getItem("cartCount"), 10) || 0;
+
+const cartCounter = document.getElementById("cartCount");
+const addButtons = document.querySelectorAll(".add-cart-btn");
+
+cartCounter.textContent = cartCount;
+
+addButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        cartCount++;
+        cartCounter.textContent = cartCount;
+        localStorage.setItem("cartCount", cartCount);
+    });
+});
+</script>
+
+
+</body>
+
+</body>
+</html>
